@@ -85,7 +85,7 @@ export default async function Home() {
             </TableHeader>
             <TableBody>
               {transactions?.map((item) => (
-                <TableRow>
+                <TableRow key={item?.id}>
                   <TableCell>
                     <div className="font-medium">{item.type}</div>
                     <div className="text-sm text-muted-foreground md:inline">
